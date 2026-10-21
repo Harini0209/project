@@ -1,162 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Events</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" Content="width=device-width,initial-scaled=1.0">
+        <title>HTML Form Controks</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <h2>🎓 Campus <span>Events</span></h2>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="register.html">Register</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Discover. Participate. Grow.</h1>
-            <p>
-                Explore exciting technical, cultural, sports and academic
-                events happening on our campus.
-            </p>
-            <a href="#events" class="button">Explore Events →</a>
-        </div>
-    </section>
-
-    <!-- Featured Events -->
-    <section class="events" id="events">
-        <div class="section-heading">
-            <h2>Featured Events</h2>
-            <a href="#categories">View All Events →</a>
-        </div>
-
-        <div class="event-container">
-
-            <!-- Tech Fest -->
-            <div class="event-card">
-                <img
-                    src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80"
-                    alt="Technical conference">
-
-                <div class="event-info">
-                    <span class="tag technical">Technical</span>
-                    <h3>Tech Fest 2026</h3>
-                    <p class="details">◷ Oct 15, 2026 &nbsp; • &nbsp; Auditorium</p>
-                    <p>Explore innovation, participate in hackathons, and showcase your skills.</p>
-                    <a href="event-details.html#tech" class="button">
-                        View Details →
-                    </a>
-                </div>
-            </div>
-
-            <!-- Cultural Day -->
-            <div class="event-card">
-                <img
-                    src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80"
-                    alt="Cultural dance performance">
-
-                <div class="event-info">
-                    <span class="tag cultural">Cultural</span>
-                    <h3>Cultural Day</h3>
-                    <p class="details">◷ Oct 20, 2026 &nbsp; • &nbsp; Main Hall</p>
-                    <p>Celebrate talent, creativity and diversity with music, dance and art performances.</p>
-                    <a href="event-details.html#cultural" class="button">
-                        View Details →
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sports Meet -->
-            <div class="event-card">
-                <img
-                    src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80"
-                    alt="Sports event">
-
-                <div class="event-info">
-                    <span class="tag sports">Sports</span>
-                    <h3>Inter-College Sports Meet</h3>
-                    <p class="details">◷ Oct 28, 2026 &nbsp; • &nbsp; Sports Ground</p>
-                    <p>Compete, collaborate and showcase your sportsmanship.</p>
-                    <a href="event-details.html#sports" class="button">
-                        View Details →
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Event Categories -->
-    <section class="categories" id="categories">
-        <h2>Event Categories</h2>
-
-        <div class="category-container">
-            <div class="category technical-bg">
-                <span>💻</span>
-                <p>Technical<br>Events</p>
-            </div>
-
-            <div class="category cultural-bg">
-                <span>🎵</span>
-                <p>Cultural<br>Events</p>
-            </div>
-
-            <div class="category sports-bg">
-                <span>🏆</span>
-                <p>Sports<br>Events</p>
-            </div>
-
-            <div class="category workshop-bg">
-                <span>👥</span>
-                <p>Workshops<br>& Seminars</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="about">
-        <div class="footer-container">
-
-            <div>
-                <h3>🎓 Campus Events</h3>
-                <p>Bringing students together through learning, creativity and collaboration.</p>
-            </div>
-
-            <div>
-                <h4>Quick Links</h4>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#events">Events</a>
-                <a href="schedule.html">Schedule</a>
-                <a href="register.html">Register</a>
-            </div>
-
-            <div>
-                <h4>Follow Us</h4>
-                <p class="social">f &nbsp; ◎ &nbsp; in &nbsp; ▶</p>
-            </div>
-
-        </div>
-
-        <p class="copyright">
-            © 2026 Campus Events. All rights reserved.
-        </p>
-    </footer>
-
-</body>
-</html>
-
+    <body>
+        <main>
+            <form action="/prefernces" method="post">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" minlength="2" maxlength="6" required>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <label for="phone">Phone Number</label>
+                <input type="phone" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required>
+                <label for="dob">Date of Birth</label>
+                <input type="dob" id="dob" value="dob" name="dob" required>
+                <label for="course">Prefered courses</label>
+                <select id="course" name="course" required>
+                    <option value="">Choose a Course</option>
+                    <option value="html">HTML &amp; CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="frontend">Frontend</option>                
+                </select>
+                <label for="bio">About You</label>
+                <textarea id="bio" name="bio" rows="4" maxlength="300" placeholder="Tell us about Yourself"></textarea>
+                <label for="resume">Resume(PDF)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,application/pdf">
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+                    <label for ="terms">
+                        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                        I agree to the terms and conditions
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>select your skills</legend>
+                    <label for="skill-html">
+                        <input type="checkbox" id="skill-html" name="skills" value="html">
+                        HTML
+                    </label>
+                    <label for="skill-js">
+                        <input type="checkbox" id="skill-js" name="skills" value="css">
+                        CSS
+                    </label>
+                    <label for="skill-js">
+                        <input type="checkbox" id="skill-js" name="skills" value="javascript">
+                        JavaScript
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <label for="experience">
+                        <input type="radio" id="beginner" name="level" value="beginner" required>
+                        Beginner
+                        </label>
+                        <label for="level-intermediate">
+                        <input type="radio" id="intermediate" name="level" value="intermediate">
+                        Intermediate
+                        </label>
+                        <label for="level-advanced">
+                        <input type="radio" id="advanced" name="level" value="advanced">
+                        Advanced
+                    </label>
+                </fieldset>
+                <button type="submit">Create account </button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </main>
+    </body>
