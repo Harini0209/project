@@ -1,0 +1,196 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7faff;
+    color: #17233c;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #17233c;
+    text-decoration: none;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #17233c;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #0875e1;
+}
+
+/* Registration Heading */
+.register-container {
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.register-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-heading h1 {
+    font-size: 34px;
+    color: #17233c;
+    margin-bottom: 8px;
+}
+
+.register-heading p {
+    color: #667085;
+    font-size: 16px;
+}
+
+/* Registration Card */
+.register-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(23, 35, 60, 0.08);
+}
+
+.register-card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.form-description {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+/* Form Fields */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d5dce8;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #17233c;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0875e1;
+    box-shadow: 0 0 0 3px rgba(8, 117, 225, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Confirmation Checkbox */
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.form-checkbox input {
+    margin-top: 5px;
+    accent-color: #0875e1;
+}
+
+/* Register Button */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0875e1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #065bb0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .register-container {
+        margin: 30px auto;
+    }
+
+    .register-heading h1 {
+        font-size: 28px;
+    }
+
+    .register-card {
+        padding: 22px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

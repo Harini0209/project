@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7faff;
+    color: #17233c;
+    line-height: 1.5;
+}
+
+.navbar {
+    background: white;
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 8px #dce5f0;
+}
+
+.logo {
+    color: #164b91;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar nav a {
+    color: #17233c;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+    color: #0875e1;
+    border-bottom: 2px solid #0875e1;
+    padding-bottom: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 5%;
+    min-height: 280px;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.intro {
+    font-size: 13px;
+    color: #526078;
+    margin-bottom: 22px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px #e4eaf2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+thead {
+    background: #2467db;
+    color: white;
+}
+
+th {
+    padding: 13px 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e2eaf4;
+}
+
+tbody tr:hover {
+    background: #f0f6ff;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+td a {
+    display: inline-block;
+    color: #1259a8;
+    background: #edf5ff;
+    border: 1px solid #8bb7ef;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px 12px;
+}
+
+td a:hover {
+    background: #2467db;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar nav {
+        justify-content: center;
+        gap: 12px;
+    }
+}
+

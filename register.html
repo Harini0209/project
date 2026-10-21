@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Campus Events</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a class="logo" href="index.html">🎓 Campus Events</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="schedule.html">Schedule</a>
+            <a class="active" href="register.html">Register</a>
+        
+        </nav>
+    </header>
+
+    <!-- Registration Section -->
+    <main class="register-container">
+
+        <section class="register-heading">
+            <h1>Event Registration</h1>
+            <p>Join us and be part of exciting campus events!</p>
+        </section>
+
+        <section class="register-card">
+
+            <h2>Register for an Event</h2>
+            <p class="form-description">
+                Fill in your details to register for your favourite event.
+            </p>
+
+            <form action="#" method="get">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="AI&DS">AI & Data Science</option>
+                            <option value="CSE">Computer Science</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="ECE">Electronics and Communication</option>
+                            <option value="EEE">Electrical and Electronics</option>
+                            <option value="MECH">Mechanical Engineering</option>
+                            <option value="CIVIL">Civil Engineering</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">Year of Study</label>
+                        <select id="year" name="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Fourth Year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="event">Select Event</label>
+                    <select id="event" name="event" required>
+                        <option value="">Choose an Event</option>
+                        <option value="Technical">Technical Event</option>
+                        <option value="Cultural">Cultural Fest</option>
+                        <option value="Sports">Sports Competition</option>
+                        <option value="Workshop">Workshop</option>
+                        <option value="Hackathon">Hackathon</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4"
+                              placeholder="Enter any additional information (optional)"></textarea>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="agreement" required>
+                    <label for="agreement">
+                        I confirm that the information provided is correct.
+                    </label>
+                </div>
+
+                <button type="submit" class="register-btn">
+                    Register Now
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>🎓 Campus Events</h3>
+                <p>
+                    Bringing students together through learning,
+                    creativity and collaboration.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="register.html">Register</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/">f</a>
+                    <a href="https://www.instagram.com/">◎</a>
+                    <a href="https://www.linkedin.com/">in</a>
+                    <a href="https://www.youtube.com/">▶</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Campus Events. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
